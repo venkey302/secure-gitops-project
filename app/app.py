@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+ifrom flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route('/health')
@@ -7,7 +7,7 @@ def health():
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Secure GitOps Pipeline Running!"})
+    return jsonify({"message": "Secure GitOps Pipeline v2 - ArgoCD Deployed!"})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
